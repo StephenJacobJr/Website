@@ -1,0 +1,200 @@
+
+
+
+head{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:0px;
+	padding:0;
+	background-color : #f1ede8 ;
+	background-image :url("../Resources/noise-all.png");
+}
+header,footer,article{
+	background-color:#2d2d2d;
+}
+p{
+	margin:0px;
+	padding:0
+}
+header{
+	display:block;
+	margin:0px;
+	margin-bottom:30px;
+	padding:0px;
+	background:none repeat scroll 0% 0% #2d2d2d;
+	border-top:3px solid #cb5432;
+}
+article{
+	top:150px;
+	position:relative;
+	margin-bottom:15px;
+	margin-left:50px;
+	margin-right:200px;
+	padding:15px;
+	border: 3px solid #cb5432;
+	color:#e6e2dd;
+	
+}
+nav{
+	margin:0;
+	position:relative;
+	
+}
+div.cleared{
+	clear:both;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#000000;	
+} 
+nav ul li a:visited{
+	text-decoration:none;
+	color:#000000;	
+} 
+
+nav ul {
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+}
+nav ul li {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #2d2d2d;
+  color:#FFFFFF;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+nav ul li.current{
+  background: #cb5432;
+  color: #000;
+}
+nav ul li a{
+	color:#fff;
+}
+nav ul li a:hover{
+	color:#fff;
+}
+nav ul li:hover {
+  background: #cb5432;
+  color: #fff;
+}
+
+nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+  z-index:10;
+}
+nav ul li ul li { 
+  background:#2d2d2d ; 
+  display: block; 
+  color: #FFF;
+  text-shadow: 0 -1px 0 #000;
+}
+nav ul li ul li:hover { background: #cb5432; }
+nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.event{
+	background:rgb(248, 245, 242);
+	position:relative;
+	margin-right:20px;
+	margin-bottom:30px;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+	display:inline-block;
+	width:850px;
+}
+.figimg{
+	border-right:2px solid rgb(204, 204, 204);
+	display:inline-block;
+	float:left;
+}	
+.figtitle{
+	margin-bottom: 13px;
+	font-size: 32px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	display: block;
+	transition: all 0.3s ease 0s;
+	text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+	width:590px;
+}
+.eventcaption{
+	display:inline-block;
+	float:right;
+	
+}
+.thumblink{
+	background: none repeat scroll 0% 0% #cb5432;
+}
+.thumblink:hover{
+	background: url("../Resources/icon-link.png") no-repeat scroll center center #cb5432;
+}
+.thumblink:hover img {
+	opacity:0.2;
+	background:#cb5432;
+}
+a{
+	text-decoration:none;
+	color:#000000;
+}
+a:hover{
+	color: #cb5432;
+}
+a:visited{
+}
+.button{
+	display: table;
+	margin-top: 18px;
+	padding: 3px;
+	background: none repeat scroll 0% 0% #cb5432;
+	color: rgb(0, 0, 0);
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.button:hover{
+	color:rgb(0,0,0);
+}
+#footer{
+	text-align: center;
+	color:#FFFFFF;
+}
+
+#footer a{
+	color:#FFF;
+}
+#footer a:hover{
+	color: #cb5432;	
+}
+.news{
+	margin:0px auto;
+	width: 85%;
+}
