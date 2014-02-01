@@ -8,8 +8,8 @@ head{
 body{
 	margin:0px;
 	padding:0;
-	background-color : #f1ede8 ;
-	background-image :url("../Resources/noise-all.png");
+	background-color : #b4e7ef ;
+	/*background-image :url("../Resources/noise-all.png");*/
 }
 header,footer,article{
 	background-color:#2d2d2d;
@@ -24,7 +24,7 @@ header{
 	margin-bottom:30px;
 	padding:0px;
 	background:none repeat scroll 0% 0% #2d2d2d;
-	border-top:3px solid #cb5432;
+	border-top:3px solid #b4e7ef;
 }
 article{
 	top:150px;
@@ -33,7 +33,7 @@ article{
 	margin-left:50px;
 	margin-right:200px;
 	padding:15px;
-	border: 3px solid #cb5432;
+	border: 3px solid #b4e7ef;
 	color:#e6e2dd;
 	
 }
@@ -76,7 +76,7 @@ nav ul li {
   transition: all 0.2s;
 }
 nav ul li.current{
-  background: #cb5432;
+  background: #b4e7ef;
   color: #000;
 }
 nav ul li a{
@@ -84,9 +84,11 @@ nav ul li a{
 }
 nav ul li a:hover{
 	color:#fff;
+	text-shadow: 2px 0 0 #000;/*, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;*/
 }
 nav ul li:hover {
-  background: #cb5432;
+  background: #b4e7ef;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
   color: #fff;
 }
 
@@ -115,25 +117,19 @@ nav ul li ul li {
   color: #FFF;
   text-shadow: 0 -1px 0 #000;
 }
-nav ul li ul li:hover { background: #cb5432; }
+nav ul li ul li:hover { background: #b4e7ef; }
 nav ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
 }
 
-.event{
-	background:rgb(248, 245, 242);
-	position:relative;
-	margin-right:20px;
-	margin-bottom:30px;
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-	display:inline-block;
-	width:850px;
-}
+
+
+
 .figimg{
 	border-right:2px solid rgb(204, 204, 204);
-	display:inline-block;
+	/*display:inline-block;*/
 	float:left;
 }	
 .figtitle{
@@ -144,29 +140,40 @@ nav ul li:hover ul {
 	display: block;
 	transition: all 0.3s ease 0s;
 	text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
-	width:590px;
+	/*width:590px;*/
+}
+.event{
+	background:rgb(248, 245, 242);
+	position:relative;
+	margin-right:20px;
+	margin-bottom:30px;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+	display:inline-block;
+	/*width:850px;*/
 }
 .eventcaption{
-	display:inline-block;
-	float:right;
+	display:block;
+	float:left;
 	
 }
 .thumblink{
-	background: none repeat scroll 0% 0% #cb5432;
+	background: none repeat scroll 0% 0% #b4e7ef;
+	float:left;
 }
 .thumblink:hover{
-	background: url("../Resources/icon-link.png") no-repeat scroll center center #cb5432;
+	background: url("../Resources/icon-link.png") no-repeat scroll center center #b4e7ef;
+	float:left;
 }
 .thumblink:hover img {
 	opacity:0.2;
-	background:#cb5432;
+	background:#b4e7ef;
 }
 a{
 	text-decoration:none;
 	color:#000000;
 }
 a:hover{
-	color: #cb5432;
+	color: #b4e7ef;
 }
 a:visited{
 }
@@ -174,7 +181,7 @@ a:visited{
 	display: table;
 	margin-top: 18px;
 	padding: 3px;
-	background: none repeat scroll 0% 0% #cb5432;
+	background: none repeat scroll 0% 0% #b4e7ef;
 	color: rgb(0, 0, 0);
 	position:absolute;
 	bottom:0;
@@ -186,15 +193,28 @@ a:visited{
 #footer{
 	text-align: center;
 	color:#FFFFFF;
+	bottom:0;
 }
 
 #footer a{
 	color:#FFF;
 }
 #footer a:hover{
-	color: #cb5432;	
+	color: #b4e7ef;	
 }
 .news{
+	
+	background-image :url("../Resources/webbg.png");
+	background-repeat:no-repeat;
 	margin:0px auto;
-	width: 85%;
+	/*width: 85%;*/
+}
+
+.main{
+	background-image :url("../Resources/webbg2.png");
+	background-repeat:no-repeat;
+	background-position:bottom,right;
+	position:relative;
+	/*width:75%;*/
+	left:30%;
 }
